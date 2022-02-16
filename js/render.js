@@ -34,7 +34,7 @@ const userMoreInfo = (userInfo) => {
     const divContentMoreInfo = createElement('div', 'content__more_information', '')
     const bio = createElement('p', 'bio', `Repositorios públicos: ${userInfo.bio}`)
     const reposCount = createElement('p', 'item__more-info', `Repositorios públicos: ${userInfo.repos}`)
-    const followers = createElement('p', 'item__more-info', `Seguidores: ${userInfo.repos}`)
+    const followers = createElement('p', 'item__more-info', `Seguidores: ${userInfo.followers}`)
 
 
     divContentMoreInfo.appendChild(bio)
