@@ -4,9 +4,6 @@ import {userInfo, userMoreInfo} from './render.js'
 
 const searchBtn = document.getElementById('btn_search')
 
-
-
-
 searchBtn.addEventListener('click', async (e) => {
 
     const userSearch = document.getElementById('search')
@@ -21,6 +18,5 @@ searchBtn.addEventListener('click', async (e) => {
     root.appendChild(user)
     root.appendChild(moreInfoUser)
     userSearch.value = ''
-    //console.log(parseData( await getUser('Rodevp') ) )
 
 })
