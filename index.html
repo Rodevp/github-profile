@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./app.css">
     <title>github profile</title>
 </head>
+
 <body>
 
-    <main class="">
+    <main class="main">
         <h1 class="title">
-            Buscar Perfil de github
+            Búscar Perfil de github
         </h1>
-        <section class="">
+        <section class="content__search">
             <input type="text" id="search" class="">
-            <button class="">
-                Buscar
+            <button class="btn__search" id="btn_search">
+                <div>
+                    <img src="./images/github.png" alt="icon github" class="image__git">
+                </div>
+                <p>
+                    Buscar
+                </p>
             </button>
         </section>
-        <section class="">
-            <div class="">
-                <div class="">
+        <section class="contain__information">
+            <div class="content__user">
+                <div class="content__avatar">
                     <!--avatar-->
-                    <img src="" alt="#">
+                    <img src="./images/github.png" alt="#">
                 </div>
-                <h2>
+                <h2 class="item">
                     Rodevp
                 </h2>
-                <p>
+                <p class="item">
                     Rodrigo Rodriguez
                 </p>
-            </div >
-            <div class="">
-                <h2 class="">
-                    bio
-                </h2 class="">
-                <p class="">
-                    public repos
+            </div>
+            <div class="content__more_information">
+                <p class="bio">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, cumque ipsum minima, doloribus magni non hic ducimus quia quibusdam earum provident sed
+                    Possimus, distinctio. Sunt mollitia aut quis nesciunt excepturi.
                 </p>
-                <p class="">
-                    Seguidores
+                <p class="item__more-info">
+                    Repositorios públicos 4
+                </p>
+                <p class="item__more-info">
+                    Seguidores 8
                 </p>
             </div>
         </section>
     </main>
-    
+
 </body>
+
 </html>
