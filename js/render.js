@@ -44,10 +44,25 @@ const userMoreInfo = (userInfo) => {
 }
 
 const notFound = () => {
-    
+
+    const divContent = createElement('div', 'not_found', '')
+    const title = createElement('h2', 'title_not_found', 'No se ha encontrado el perfil, busca de nuevo.😫')
+    const divContentImg = createElement('div', 'img__not-found-content', '')
+    const img = createElement('img', '', '')
+
+    img.setAttribute('src', './images/thanos_dance.gif')
+
+    divContentImg.appendChild(img)
+
+    divContent.appendChild(title)
+    divContent.appendChild(divContentImg)
+
+    return divContent
+
 }
 
 export {
     userInfo,
-    userMoreInfo
+    userMoreInfo,
+    notFound
 }

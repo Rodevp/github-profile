@@ -1,7 +1,6 @@
 import { getUser } from './api.js'
 import { parseData } from './parseData.js'
-import {userInfo, userMoreInfo} from './render.js'
-//TODO: verificar cuando la respuesta es 404
+import {userInfo, userMoreInfo, notFound} from './render.js'
 const searchBtn = document.getElementById('btn_search')
 
 searchBtn.addEventListener('click', async (e) => {
@@ -9,7 +8,6 @@ searchBtn.addEventListener('click', async (e) => {
     const root = document.getElementById('render_info')
     const userSearch = document.getElementById('search')
     const data = await getUser(userSearch.value)
-    //await getUser(userSearch.value)
 
     if (data.status === 200) {
         
@@ -23,7 +21,8 @@ searchBtn.addEventListener('click', async (e) => {
     }
 
     if (data.status === 404) {
-        root.innerHTML = 'No se encontro el perfil'
+        root.innerHTML = ''
+        root.appendChild( notFound() )
     }
 
     userSearch.value = ''
