@@ -31,7 +31,7 @@ const userInfo = (userInfo) => {
 const userMoreInfo = (userInfo) => {
 
     const divContentMoreInfo = createElement('div', 'content__more_information', '')
-    const bio = createElement('p', 'bio', `${userInfo.bio}`)
+    const bio = createElement('p', 'bio', `${userInfo.bio !== null ? userInfo.bio : 'No hay biografia'}`)
     const reposCount = createElement('p', 'item__more-info', `Repositorios públicos: ${userInfo.repos}`)
     const followers = createElement('p', 'item__more-info', `Seguidores: ${userInfo.followers}`)
 
@@ -41,6 +41,10 @@ const userMoreInfo = (userInfo) => {
 
     return divContentMoreInfo
 
+}
+
+const notFound = () => {
+    
 }
 
 export {
